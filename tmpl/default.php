@@ -14,4 +14,6 @@
 <?php if ($module->showtitle): ?>
 <<?php echo $params->get('header_tag'); ?>><?php echo $module->title; ?></<?php echo $params->get('header_tag'); ?>>
 <?php endif; ?>
-<?php echo $module->content; ?>
+<div class="blocks-container blockssvg-container">
+    <p><?php echo $module->content; ?></p>
+</div>
