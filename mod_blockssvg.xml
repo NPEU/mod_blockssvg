@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+
+    <name>MOD_BLOCKSSVG</name>
+    <author>Andy Kirk</author>
+    <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
+    <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
+    <creationDate>April 2026</creationDate>
+    <copyright>(C) NPEU 2026</copyright>
+    <license>MIT License; see LICENSE.md</license>
+    <group>com_blocks</group>
+
+    <!--  The version string is recorded in the components table -->
+    <version>0.0.1</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>MOD_BLOCKSSVG_XML_DESCRIPTION</description>
+
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" name="NPEU: mod_blockssvg Update Site">https://raw.githubusercontent.com/NPEU/mod_blockssvg/main/update-manifest.xml</server>
+    </updateservers>
+
+    <namespace path="src">NPEU\Module\Blockssvg</namespace>
+
+    <files>
+        <folder module="mod_blockssvg">services</folder>
+        <folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fieldset name="basic">
+            <field
+                name="details"
+                type="note"
+                label="MOD_BLOCKSSVG_DETAILS_LABEL"
+                description="MOD_BLOCKSSVG_DETAILS_DESC"
+                class="alert alert-info"
+            />
+            <field
+                name="content"
+                type="editor"
+                label="MOD_BLOCKSSVG_SVG_LABEL"
+                description="MOD_BLOCKSSVG_SVG_DESC"
+                default=""
+                required="true"
+                editor="codemirror"
+                filter="raw"
+            />
+            <field
+                    name="help"
+                    type="note"
+                    label="MOD_BLOCKSSVG_HELP_LABEL"
+                    description="MOD_BLOCKSSVG_HELP_DESC"
+                    class="alert alert-info"
+                />
+        </fieldset>
+    </config>
+
+</extension>

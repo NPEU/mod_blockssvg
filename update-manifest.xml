@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>NPEU: mod_blockssvg</name>
+        <description>Joomla! mod_blockssvg module</description>
+        <element>mod_blockssvg</element>
+        <type>module</type>
+        <version>0.0.1</version>
+        <client>site</client>
+        <infourl title="NPEU: mod_blockssvg">https://github.com/NPEU/mod_blockssvg/releases/tag/v0.0.1</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_blockssvg/archive/v0.0.1.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
+</updates>
